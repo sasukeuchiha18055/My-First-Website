@@ -1,0 +1,1000 @@
+
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<style>
+* {box-sizing: border-box;}
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+overflow: hidden;
+background-image: linear-gradient(90deg,orange,crimson,darkmagenta);
+padding: 5px 10px;}
+
+.aa {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+z-index:1;
+margin:5px;
+}
+.ab {
+  float: right;
+margin:5px;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+z-index:1;
+background-color: dodgerblue;
+  color: white;
+height:45px;
+
+}
+.header span:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.logo {
+  height:50px;
+width:50px;
+border-radius:50px;
+margin-right:20px;
+float:left;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a {color:white;}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+.fo{font-family: 'Lobster', cursive;
+font-size:30px;
+color:orange;}
+
+.in{font-family: 'Lobster', cursive;
+font-size:30px;
+color:orangered;}
+
+
+h3{color:red;}
+img{widht:90px;
+height:90px;}
+th{text-align:center;
+padding 10px;
+}
+table{border-spacing:40px 0;}
+table{width:80%;
+border-collapse: separate;
+border-spacing: 10 10px;}
+
+th{ 
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-color:grey;
+color:white;
+width:7%;
+}
+tr{ 
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-color:lightcyan;
+color:black;
+}
+td{text-align:center;
+height:50px;}
+
+.ctp{color:white;
+position:absolute;
+background-color:red;
+border:none;
+border-radius:5px;
+left:40%;
+width:150px;
+height:50px;}
+
+input{font:20px;
+color:crimson;}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.container {
+width:100%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 35%;
+  margin-top: 6px;
+font-size:16px;
+}
+
+.col-75 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.l1 {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.i1{width:70%;
+float:left;
+}
+
+.i2{position:absolute;
+right:20px;
+width:20%;}
+
+.h1{display:none;}
+.bbb{border:none;
+color:white;
+background-color:red;
+position:absolute;
+border-radius:5px;
+width:100px;
+height:45px;
+padding:5px;
+}
+button:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.5);}
+#ppp{display:none;}
+#pr{display:none;
+position:absolute;
+bottom:-800px;
+left:600px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.last{width:100%;
+height:475px;
+
+background-image: linear-gradient(90deg,#363636,black);
+
+color:white;}
+
+.xc1{
+margin:auto;
+}
+
+.last{width:100%;
+margin:0;}
+
+.e1,.e2,.e3,.e4{
+
+float:left;
+font-size:13px;
+margin:10px;
+padding:10px;
+transition:margin-left 2s;
+}
+
+.e1 span,.e2 span,.e3 span,.e4 span{
+transition:margin-left 1s;}
+
+.c1{
+display:inline-block;
+position:relative;;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Old_Visa_Logo.svg/1024px-Old_Visa_Logo.svg.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c2{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c3{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://i0.wp.com/www.ecommerce-nation.com/wp-content/uploads/2018/01/paypal.png?fit=1000%2C600&ssl=1");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c4{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png");
+width:70px;
+height:40px;
+background-color:white;}
+
+.c5{
+display:inline-block;
+position:relative;
+background-position: -1px -10px;
+background-size: cover;
+background-image:url("https://www.searchpng.com/wp-content/uploads/2020/06/Paytm_Circle_Logo_PNG-715x715.jpg");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c6{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://download.logo.wine/logo/PhonePe/PhonePe-Logo.wine.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+
+.e1,.e2,.e3{width:15%;}
+
+h4{font-size:15px;
+text-transform: uppercase;}
+
+.about{width:300px;}
+
+.fa{text-decoration:none;
+color:white;
+width:40px;
+height:40px;
+padding:5px;
+text-align:center;
+font-size:25px;
+border:2px solid white;
+border-radius:50%;}
+
+.ff1{transition:background-color 2s;}
+
+.ff1:hover{
+animation: rot 2s;
+background-color:#3B5998;
+}
+
+
+.ff2{transition:background-color 2s;}
+
+.ff2:hover{
+animation: rot 2s;
+background-color:#55ACEE;
+}
+.ff3{transition:background-color 2s;}
+
+.ff3:hover{
+animation: rot 2s;
+background-color:#bb0000;
+}
+.ff4{transition:background-color 2s;}
+
+.ff4:hover{
+animation: rot 2s;
+background-color:#125688;
+}
+.ff5{transition:background-color 2s;}
+
+.ff5:hover{
+animation: rot 2s;
+background-color:#fffc00;
+}
+
+@keyframes rot {
+  50% {transform: rotate(360deg);}
+}
+
+
+.e1 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+
+.e2 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+.e3 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;}
+
+.cst{margin-left:80px;}
+
+
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+
+.form-popup {
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+.open-button1 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup1 {
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container1 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container1 input[type=text], .form-container1 input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container1 input[type=text]:focus, .form-container1 input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container1 .btn1 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container1 .cancel1 {
+  background-color: red;
+}
+
+
+.form-container1 .btn1:hover, .open-button1:hover {
+  opacity: 1;
+}
+.button{border:none;
+background-color:transparent;
+color:white;
+font-size:17px;}
+
+
+
+
+</style>
+<body onload="checkCookie()">
+
+<div class="header">
+<span class="aa fo" style="color:lightgreen;">T <span class="in" style="color:snow;"> t </span>RAIN</span>
+  <img src="n.jpg" class="logo">
+  <div class="header-left">
+    <a class="aa" href="main page.html">Home</a>
+    <a class="aa active" href="check.html">Book Tickets</a>
+    <a class="aa" href="locate.html">Locate</a>
+    <a class="aa" href="contact.html">Contact</a>
+    <a class="aa"  href="about.html">About</a>
+    <span class="ab"><button class="button" onclick="openForm()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> Login</button></span>
+    <span class="ab"><button  class="button "onclick="openForm1()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> SignUp</button></span>
+<span  class="ab" style="background-color:lightgreen;width:100px;position:relative;"><span style="font-size:10px;vertical-align:20px;line-height:0.00001;">Welcome back</span><span  id="myuser"  style="position:absolute;top:40%;left:20%;"> SignUp</span></span>
+
+  </div>
+</div>
+
+
+
+
+<div class="form-popup" id="myForm" onsubmit="return false;">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="smyucook()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+<div class="form-popup1" id="myForm1">
+  <form class="form-container1" onsubmit="return false;">
+    <h1>Sign Up</h1>
+
+    <label for="username1"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" id="username1" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Comfirm Password" name="psw" required>
+
+    <button type="submit" class="btn1" onclick="smyucook1()">Signup</button>
+    <button type="button" class="btn1 cancel1" onclick="closeForm1()">Close</button>
+  </form>
+</div>
+
+
+
+<div style="padding:20px;"><h3>BOOK YOUR TICKET</h3>
+<div id="h1" class="h1" style="color:green;"><br><span>Reference id :2345ghx90Xcf</span><br><span>Ticket id :467Cx3456</span></div>
+<hr>
+<table>
+<tr>
+<th><img src="tr.png"></th>
+<th><div><u>Train :</u><br><span id="tna">------</span></div></th>
+<th><div><u>Train No :</u><br><span id="tno">-----</span></div></th>
+<th><div><u>Fare :</u><br><span id="cost">-------</span></div></th>
+<th><div><u>class :</u><br><span id="type">-----</span></div></th>
+
+</tr>
+</table><div>
+<div id="hide">
+<div>
+<h3>ADULT PASSENGER DETAILS</h3>
+<hr>
+<form id="full"  onsubmit="che();return false;">
+<table>
+<tr>
+<th id="sr1">Sr.No</th>
+<th>Name</th>
+<th>Gender</th>
+<th>Age</th>
+</tr>
+<tr id="myRow">
+<td class="mrow" >Adult 1</td>
+<td><input class="tkt1" type="text" placeholder="Name" style="width:90%;height:30px;" required></td>
+<td><select  style="width:30%;height:30px;"  id="g1" required>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select>
+</td>
+<td><input type="number" style="width:30%;height:30px;" required></td>
+</tr>
+
+<tr>
+<td class="mrow" >Adult 2</td>
+<td><input class="tkt1"  type="text" placeholder="Name" style="width:90%;height:30px;"></td>
+<td><select  style="width:30%;height:30px;"  id="g2">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select>
+</td>
+<td><input type="number" style="width:30%;height:30px;"></td>
+</tr>
+<tr>
+<td class="mrow" >Adult 3</td>
+<td><input  class="tkt1" type="text" placeholder="Name" style="width:90%;height:30px;"></td>
+<td><select  style="width:30%;height:30px;"  id="g3">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select>
+</td>
+<td><input type="number" style="width:30%;height:30px;"></td>
+</tr>
+
+</table>
+</div>
+
+<div>
+<h3>CHILD PASSENGER DETAILS</h3>
+<hr>
+
+<table>
+<tr>
+<th id="sr2">Sr.No</th>
+<th>Name</th>
+<th>Gender</th>
+<th>Age</th>
+</tr>
+<tr>
+<td class="mrow" >Child 1</td>
+<td><input  class="tkt1" type="text" placeholder="Name" style="width:90%;height:30px;"></td>
+<td><select  style="width:30%;height:30px;"  id="g4">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select>
+</td>
+<td><input type="number" style="width:30%;height:30px;"></td>
+</tr>
+
+<tr>
+<td class="mrow" >Child 2</td>
+<td><input  class="tkt1" type="text" placeholder="Name" style="width:90%;height:30px;"></td>
+<td><select  style="width:30%;height:30px;"  id="g5">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select>
+</td>
+<td><input type="number" style="width:30%;height:30px;"></td>
+</tr>
+</table>
+<button id="h2" class="ctp" type="submit"  onclick="hide();tick();">Continue to Payment</buton>
+
+</form>
+
+</div></div>
+<br><br>
+
+<div id="ppp">
+<div class=i1>
+<h3>MAKE PAYMENT</h3>
+<hr><br>
+<img src="pay.jpg">
+
+
+<div class="container">
+<br>
+  <form id="fff" onsubmit="che1();return false;">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Card Number</label>
+    </div>
+    <div class="col-75">
+      <input type="number"  id="fname" class="l1" placeholder="123456" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Name on Card</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" class="l1" placeholder="xyz" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="typ">Card Type</label>
+    </div>
+    <div class="col-75">
+      <select id="typ" class="l1"  required>
+        <option value="Credit">Credit</option>
+        <option value="Debit">Debit</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Card Expiry</label>
+    </div>
+    <div class="col-75">
+      <input type="number" id="subject" class="l1" placeholder="Month" required>
+<input type="number" id="subject" class="l1" placeholder="Year" required>
+    </div>
+  </div>
+
+ <div class="row">
+    <div class="col-25">
+      <label for="fnam">CVV Number</label>
+    </div>
+    <div class="col-75">
+      <input type="number"  id="fnam" class="l1" placeholder="123456" required>
+    </div>
+  </div>
+ 
+
+ <div class="row">
+    <div class="col-25">
+      <label for="fnaaa">Total Amount</label>
+    </div>
+    <div class="col-75">
+      <input type="text"  id="fnaaa" class="l1" placeholder="xxx">
+    </div>
+  </div>
+ <center><br>
+<div class="row">
+    <div class="col-25">
+      <button id="h4" class="bbb" onclick="rev()">Back</button>
+    </div>
+    <div class="col-75">
+      <button id="h3" type="submit" class="bbb" onclick="allsh1();allsh2();sct();">Confirm Payment</button>
+    </div>
+  </div><center>
+ 
+  </form>
+</div>
+</div>
+
+<div class="i2">
+<h3>MAKE PAYMENT ONLINE</h3>
+<hr><br>
+<img src="op.jpg" style="width:250px;height:250px;">
+<br>
+<img src="we.jpg" style="width:250px;height:250px;">
+
+</div>
+
+</div>
+<br><br>
+<button id="pr" class="bbb" onclick="window.print()">Print </button>
+
+</div></div>
+
+
+
+
+
+
+
+<div class="last">
+<div class="cst">
+<div class="feature e1">
+<h4>Features</h4>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+</div>
+
+<div class="bwu e2">
+<h4>Book with us</h4>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Train Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+
+</div>
+
+<div class="info e3">
+<h4> Info </h4>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<a href="contact.html" style="color:white;text-decoration:none;" ><span>Contact Us</span><br></a>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<span>FAQs</span><br>
+</div>
+
+<div class="about e4" style="width:600px;">
+<h4>TtRAIN</h4>
+<span>TtRAIN is a one stop solution that furnishes an expanse of data-based travel 
+discovery at your disposal. So get connected for an inclusive experience of Smart 
+Train Ticket booking & journey information.</span><br><br>
+<h4>payment and security</h4>
+<span class="cards c1"></span>
+<span class="cards c2"></span>
+<span class="cards c3"></span>
+<span class="cards c4"></span>
+<span class="cards c5"></span>
+<span class="cards c6"></span>
+<br><br>
+<h4>follow us on</h4>
+<a href="https://www.facebook.com/" class="ff1 fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/?lang=en" class="ff2 fa fa-twitter" target="_blank"></a>
+<a href="https://www.youtube.com/" class="ff3 fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/" class="ff4 fa fa-instagram" target="_blank"></a>
+<a href="https://www.snapchat.com/" class="ff5 fa fa-snapchat-ghost" target="_blank"></a>
+<br><br><br>
+<footer>
+<span style="font-size:13px;">
+Copyright © 2021 TtRAIN </span>
+
+</footer>
+
+
+</body>
+<script>
+ document.getElementById("tna").innerHTML=localStorage.getItem("tna");
+document.getElementById("tno").innerHTML=localStorage.getItem("tno");
+document.getElementById("cost").innerHTML=localStorage.getItem("cost1");
+document.getElementById("type").innerHTML=localStorage.getItem("type1");
+document.getElementById("fnaaa").disabled="True";
+var tv=0;
+var tv1=0;
+
+var finalcost=localStorage.getItem("cost1")[3]*100+localStorage.getItem("cost1")[4]*10+localStorage.getItem("cost1")[5]*1
+
+
+function rev(){
+document.getElementById("ppp").style.display="none";
+document.getElementById("hide").style.display="inline-block";
+
+}
+function hide(){
+if(tv==1){
+document.getElementById("hide").style.display="none";
+document.getElementById("ppp").style.display="inline-block";
+}
+}
+
+function allsh1(){
+if(tv1==1){
+document.getElementById("hide").style.display="inline-block";
+document.getElementById("ppp").style.display="inline-block";
+document.getElementById("h1").style.display="inline-block";
+document.getElementById("pr").style.display="inline-block";
+document.getElementById("h2").style.display="none";
+document.getElementById("h3").style.display="none";
+document.getElementById("h4").style.display="none";
+
+var form = document.getElementById("full");
+var elements = form.elements;
+for (var i = 0, len = elements.length; i < len; ++i) {
+elements[i].disabled = true;
+}
+
+}
+
+}
+var tv2=0;
+
+function allsh2(){
+tv2=1;
+if(tv1==1){
+var form = document.getElementById("fff");
+var elements = form.elements;
+for (var i = 0, len = elements.length; i < len; ++i) {
+elements[i].disabled = true;
+}
+}}
+
+
+
+function sct(){
+if(tv2==1&&tv1==1){
+window.scroll({
+  top: 0, 
+  left: 0, 
+  behavior: 'smooth'
+});
+}
+}
+
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+
+
+
+
+
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+
+function smyucook(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username").value;
+}
+
+function smyucook1(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username1").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username1").value;
+
+}
+
+
+function checkCookie() {
+  var user = localStorage.getItem("myusername");
+
+  if (user != "") {
+   
+document.getElementById("myuser").style.display = "block";
+document.getElementById("myuser").innerHTML=user;
+  } 
+}
+
+
+
+function che(){tv=1;}
+function che1(){tv1=1;}
+
+var ncount=0;
+function tick(){
+if(tv==1){
+var tkts = document.getElementsByClassName("mrow");
+
+var tkts1 = document.getElementsByClassName("tkt1");
+
+document.getElementById("sr1").innerHTML="Ticket No";
+document.getElementById("sr2").innerHTML="Ticket No";
+
+
+if(tkts1[0].value!=''){tkts[0].innerHTML="S1 J99";tkts[0].style.color="green";ncount+=1;}
+if(tkts1[1].value!=''){tkts[1].innerHTML="S1 J100";tkts[1].style.color="green";ncount+=1;}
+if(tkts1[2].value!=''){tkts[2].innerHTML="S1 J101";tkts[2].style.color="green";ncount+=1;}
+if(tkts1[3].value!=''){tkts[3].innerHTML="S1 J102";tkts[3].style.color="green";ncount+=1;}
+if(tkts1[4].value!=''){tkts[4].innerHTML="S1 J102";tkts[4].style.color="green";ncount+=1;}
+
+if(tkts1[0].value==''){tkts[0].innerHTML="---";tkts[0].style.color="red";}
+if(tkts1[1].value==''){tkts[1].innerHTML="---";tkts[1].style.color="red";}
+if(tkts1[2].value==''){tkts[2].innerHTML="---";tkts[2].style.color="red";}
+if(tkts1[3].value==''){tkts[3].innerHTML="---";tkts[3].style.color="red";}
+if(tkts1[4].value==''){tkts[4].innerHTML="---";tkts[4].style.color="red";}
+document.getElementById("fnaaa").placeholder="Rs. " + ncount*finalcost +".00";
+
+}}
+</script>
+</html>

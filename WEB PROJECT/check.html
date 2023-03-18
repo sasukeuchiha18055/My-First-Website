@@ -1,0 +1,1328 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+background-color:rgb(240,240,240);
+}
+
+
+
+.image{border:2px solid cyan;
+background-image:url("https://neural-geode-744.web.app/img/train.png");
+background-repeat:no-repeat;
+background-size:100% 100%;
+height:23vw;
+  position: relative;}
+
+.header {
+  overflow: hidden;
+background-image: linear-gradient(90deg,orange,crimson,darkmagenta);
+ padding: 5px 10px;}
+
+.aa {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+z-index:1;
+margin:5px;
+}
+.ab {
+   float: right;
+margin:5px;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+z-index:1;
+background-color: dodgerblue;
+  color: white;
+height:45px;
+}
+
+.logo {
+  height:50px;
+width:50px;
+border-radius:50px;
+margin-right:20px;
+float:left;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.header span:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a {color:white;}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+#top{border:1px solid grey;
+width:70%;
+font-size:17px;
+background-color:white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:5px;
+height:20px;
+color:grey;
+}
+
+.tile{float:left;
+width:20%;}
+
+#book{color:white;
+background-color:#ef6614;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+padding:5px;
+width:100%;
+height:40px;
+border: 2px solid #ef6614;
+
+
+}
+#book:hover {background-color:orangered;}
+.c-timeline{
+width:70%;
+height: 2px;
+background-color: rgb(187, 187, 187);
+align:center;
+position:relative;
+}
+
+#book1{color:#ef6614;
+background-color:white;
+border-radius:10px;
+padding:5px;
+width:100%;
+height:50px;
+border: 2px solid #ef6614;
+
+}
+#book1:hover {background-color:#ef6614;
+color:white;}
+.c-timeline{
+width:70%;
+height: 2px;
+background-color: rgb(187, 187, 187);
+align:center;
+position:relative;
+}
+
+.dot{
+width: 6px;
+ height: 6px;
+ border-radius: 6px;
+ background-color:rgb(117, 117, 117);
+ margin-top: -2px;
+position:absolute;
+left:0%;}
+
+.tt{font-size:15px;}
+.dot2{
+width: 6px;
+ height: 6px;
+ border-radius: 6px;
+ background-color:rgb(117, 117, 117);
+ margin-top: -2px;
+position:absolute;
+right:0%;}
+
+ul li{
+
+   font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    border: 1px solid #24c114;
+    border-radius: 2px;
+    color: #24c114;
+    font-size: 5%;
+    margin:0 2px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 12%;
+    line-height: 22px;
+    float: left;
+    list-style: none;}
+
+
+.a1{width:20%;
+height:100px;
+background-color:white;
+float:left;
+padding:20 5px;
+}
+
+
+
+.ss{width:70%;
+border:1px solid grey;
+background-color:white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:15px;
+}
+.x1{
+width:150px;
+height:130px;
+border: 1px solid grey;
+border-radius:10px;
+ content: "";
+  clear: both;
+  display: table;
+  margin: 10px;
+line-height:1.5;
+}
+
+.fc {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color:#eee;
+}
+
+#att1,#att2,#att3,#att4,#att5{font-size:20px;
+  font-weight: bold;
+}
+.fo{font-family: 'Lobster', cursive;
+font-size:30px;
+color:darkorange;}
+
+.in{font-family: 'Lobster', cursive;
+font-size:30px;
+color:crimson;}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+
+.form-inline input {
+  vertical-align: middle;
+height:40px;
+width:20%;
+  
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+height:40px;
+}
+
+.form-inline button:hover {
+  background-color: blue;
+}
+.frm { margin-left:23vw; 
+  position: absolute;
+width:80%;
+border-radius:15px;}
+
+.fc{display:none;}
+
+
+
+
+
+
+
+
+
+.last{width:100%;
+height:475px;
+
+background-image: linear-gradient(90deg,#363636,black);
+
+color:white;}
+
+.xc1{
+margin:auto;
+}
+
+.last{width:100%;
+margin:auto;}
+
+.e1,.e2,.e3,.e4{
+
+float:left;
+font-size:13px;
+margin:10px;
+padding:10px;
+transition:margin-left 2s;
+}
+
+.e1 span,.e2 span,.e3 span,.e4 span{
+transition:margin-left 1s;}
+
+.c1{
+display:inline-block;
+position:relative;;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Old_Visa_Logo.svg/1024px-Old_Visa_Logo.svg.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c2{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c3{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://i0.wp.com/www.ecommerce-nation.com/wp-content/uploads/2018/01/paypal.png?fit=1000%2C600&ssl=1");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c4{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png");
+width:70px;
+height:40px;
+background-color:white;}
+
+.c5{
+display:inline-block;
+position:relative;
+background-position: -1px -10px;
+background-size: cover;
+background-image:url("https://www.searchpng.com/wp-content/uploads/2020/06/Paytm_Circle_Logo_PNG-715x715.jpg");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c6{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://download.logo.wine/logo/PhonePe/PhonePe-Logo.wine.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+
+.e1,.e2,.e3{width:15%;}
+
+h4{font-size:15px;
+text-transform: uppercase;}
+
+.about{width:300px;}
+
+.fa{text-decoration:none;
+color:white;
+width:40px;
+height:40px;
+padding:5px;
+text-align:center;
+font-size:25px;
+border:2px solid white;
+border-radius:50%;}
+
+.ff1{transition:background-color 2s;}
+
+.ff1:hover{
+animation: rot 2s;
+background-color:#3B5998;
+}
+
+
+.ff2{transition:background-color 2s;}
+
+.ff2:hover{
+animation: rot 2s;
+background-color:#55ACEE;
+}
+.ff3{transition:background-color 2s;}
+
+.ff3:hover{
+animation: rot 2s;
+background-color:#bb0000;
+}
+.ff4{transition:background-color 2s;}
+
+.ff4:hover{
+animation: rot 2s;
+background-color:#125688;
+}
+.ff5{transition:background-color 2s;}
+
+.ff5:hover{
+animation: rot 2s;
+background-color:#fffc00;
+}
+
+@keyframes rot {
+  50% {transform: rotate(360deg);}
+}
+
+
+.e1 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+
+.e2 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+.e3 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;}
+
+.cst{margin-left:80px;}
+
+
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+
+.form-popup {
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+.open-button1 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup1 {
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container1 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container1 input[type=text], .form-container1 input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container1 input[type=text]:focus, .form-container1 input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container1 .btn1 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container1 .cancel1 {
+  background-color: red;
+}
+
+
+.form-container1 .btn1:hover, .open-button1:hover {
+  opacity: 1;
+}
+.button{border:none;
+background-color:transparent;
+color:white;
+font-size:17px;}
+
+</style>
+
+
+
+
+
+
+<body onload="checkCookie()">
+
+<div class="header">
+<span class="aa fo" style="color:lightgreen;">T <span class="in" style="color:snow;"> t </span>RAIN</span>
+  <img src="n.jpg" class="logo">
+  <div class="header-left">
+    <a class="aa" href="main page.html">Home</a>
+    <a class="aa active" href="check.html">Book Tickets</a>
+    <a class="aa" href="locate.html">Locate</a>
+    <a class="aa" href="contact.html">Contact</a>
+    <a class="aa"  href="about.html">About</a>
+    <span class="ab"><button class="button" onclick="openForm()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> Login</button></span>
+    <span class="ab"><button  class="button "onclick="openForm1()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> SignUp</button></span>
+<span  class="ab" style="background-color:lightgreen;width:100px;position:relative;"><span style="font-size:10px;vertical-align:20px;line-height:0.00001;">Welcome back</span><span  id="myuser"  style="position:absolute;top:40%;left:20%;"> SignUp</span></span>
+
+  </div>
+</div>
+
+
+
+
+<div class="form-popup" id="myForm" onsubmit="return false;">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="smyucook()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+<div class="form-popup1" id="myForm1">
+  <form class="form-container1" onsubmit="return false;">
+    <h1>Sign Up</h1>
+
+    <label for="username1"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" id="username1" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Comfirm Password" name="psw" required>
+
+    <button type="submit" class="btn1" onclick="smyucook1()">Signup</button>
+    <button type="button" class="btn1 cancel1" onclick="closeForm1()">Close</button>
+  </form>
+</div>
+
+<br><br><br>
+
+<div class="frm">
+<form class="form-inline" action="check.html">
+  
+  <input type="text" id="from1" placeholder="Starting place">
+  
+  <input type="text" id="to1" placeholder="Final Destination">
+  
+  <input type="date" id="dt1">
+    <button type="submit" onclick="saveData()" style="background-color:blue;">Modify Search</button>
+</form></div>
+<br><br>
+<br><br>
+<center><div id="">
+<span style="color:darkblue;font-size:15px;"> From--</span><b><span id="from" style="color:black;text-transform: uppercase;">------</span></b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:darkblue;font-size:15px;">To--</span><b><span id="to" style="color:black;text-transform: uppercase;">--------</span></b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:darkblue;font-size:15px;">Departure Date--</span><b><span id="dt" style="color:black;">-------</span></b>
+</div><center>
+
+<br>
+
+
+<div id="top">
+<div id="testing" class="tile">Train</div>
+<div class="tile">Arraival</div>
+<div class="tile">Duration</div>
+<div class="tile">Departure</div>
+<div class="tile"></div>
+
+
+
+</div>
+<br>
+<div style="width:99%;background-color:lightblue;">
+<div class="ss">
+<div class="a1"><b style="color:blue;font-size:19px"><span id="a1">Delhi - kanpur Express</span></b><br><span style="font-size:15px;"><b>Train no-</b><span id="b1">12459</span></span></div>
+<div class="a1"><span><b>03:33</b></span><br><span style="font-size:15px;">delhi jn</span></div>
+
+<div class="a1 tt">12:20
+<div class="c-timeline"><div class="dot"></div><div class="dot2"></div></div>
+<br>
+<div class="uul">
+<ul>
+<li>S</li>
+<li>m</li>
+<li>t</li>
+<li>w</li>
+<li>t</li>
+<li>f</li>
+</ul>
+</div></div>
+<div class="a1 pd";><span><b>16:33</b></span><br><span  style="font-size:15px;">kanpur jn</span></div>
+<div class="a1"><button type="button" id="book1" onclick="show1()">Check Availability</button></div>
+<br><hr>
+
+<div class="fc" id="sh1">
+<div class="x1">
+<span id="att1" class="zz1">General</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx1">Rs.400.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz1();za1()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att2" class="zz2">Sleeper</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx2">Rs.500.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz2();za1()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att3" class="zz3">AC 3 tier</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx3">Rs.600.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz3();za1()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att4" class="zz4">AC 2 tier</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx4">Rs.700.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz4();za1()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att5" class="zz5">First AC</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx5">Rs.800.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz5();za1()">Book Now</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+<br>
+<div class="ss">
+<div class="a1"><b style="color:blue;font-size:19px"><span id="a2">Maharastra - Delhi Express</span></b><br><span style="font-size:15px;"><b>Train no-</b><span id="b2">12229</span></span></div>
+<div class="a1"><span><b>13:33</b></span><br><span style="font-size:15px;">delhi jn</span></div>
+
+<div class="a1 tt">10:00
+<div class="c-timeline"><div class="dot"></div><div class="dot2"></div></div>
+<br>
+<div class="uul">
+<ul>
+<li>t</li>
+<li>w</li>
+<li>t</li>
+<li>f</li>
+</ul>
+</div></div>
+<div class="a1 pd";><span><b>13:33</b></span><br><span  style="font-size:15px;">kanpur jn</span></div>
+<div class="a1"><button type="button" id="book1" onclick="show2()">Check Availability</button></div>
+<br><hr>
+
+<div class="fc" id="sh2">
+<div class="x1">
+<span id="att1" class="zz1">General</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx1">Rs.400.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz1();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att2" class="zz2">Sleeper</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx2">Rs.500.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz2();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att3" class="yz3">AC 3 tier</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx3">Rs.600.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz3();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att4" class="yz4">AC 2 tier</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx4">Rs.700.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz4();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att5" class="yz5">First AC</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx5">Rs.800.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz5();za2()">Book Now</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<br>
+<div class="ss">
+<div class="a1"><b style="color:blue;font-size:19px"><span id="a3">Mumbai - Delhi Express</span></b><br><span style="font-size:15px;"><b>Train no-</b><span id="b3">18889</span></span></div>
+<div class="a1"><span><b>19:33</b></span><br><span style="font-size:15px;">delhi jn</span></div>
+
+<div class="a1 tt">15:00
+<div class="c-timeline"><div class="dot"></div><div class="dot2"></div></div>
+<br>
+<div class="uul">
+<ul>
+<li>S</li>
+<li>m</li>
+<li>w</li>
+<li>t</li>
+<li>f</li>
+</ul>
+</div></div>
+<div class="a1 pd";><span><b>06:03</b></span><br><span  style="font-size:15px;">kanpur jn</span></div>
+<div class="a1"><button type="button" id="book1" onclick="show3()">Check Availability</button></div>
+<br><hr>
+
+<div class="fc" id="sh3">
+<div class="x1">
+<span id="att1" class="zz1">General</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx1">Rs.400.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz1();za3()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att2" class="zz2">Sleeper</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx2">Rs.500.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz2();za3()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att3" class="yz3">AC 3 tier</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx3">Rs.600.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz3();za3()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att4" class="yz4">AC 2 tier</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx4">Rs.700.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz4();za3()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att5" class="yz5">First AC</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx5">Rs.800.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz5();za3()">Book Now</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<br>
+<div class="ss">
+<div class="a1"><b style="color:blue;font-size:19px"><span id="a4">Maharastra - Delhi Express</span></b><br><span style="font-size:15px;"><b>Train no-</b><span id="b4">12229</span></span></div>
+<div class="a1"><span><b>13:33</b></span><br><span style="font-size:15px;">delhi jn</span></div>
+
+<div class="a1 tt">10:00
+<div class="c-timeline"><div class="dot"></div><div class="dot2"></div></div>
+<br>
+<div class="uul">
+<ul>
+<li>t</li>
+<li>w</li>
+<li>t</li>
+<li>f</li>
+</ul>
+</div></div>
+<div class="a1 pd";><span><b>19:45</b></span><br><span  style="font-size:15px;">kanpur jn</span></div>
+<div class="a1"><button type="button" id="book1" onclick="show4()">Check Availability</button></div>
+<br><hr>
+
+<div class="fc" id="sh4">
+<div class="x1">
+<span id="att1" class="zz1">General</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx1">Rs.400.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz1();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att2" class="zz2">Sleeper</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx2">Rs.500.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz2();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att3" class="yz3">AC 3 tier</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx3">Rs.600.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz3();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att4" class="yz4">AC 2 tier</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx4">Rs.700.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz4();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att5" class="yz5">First AC</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx5">Rs.800.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz5();za2()">Book Now</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<div class="ss">
+<div class="a1"><b style="color:blue;font-size:19px"><span id="a5">Maharastra - Delhi Express</span></b><br><span style="font-size:15px;"><b>Train no-</b><span id="b5">12229</span></span></div>
+<div class="a1"><span><b>13:33</b></span><br><span style="font-size:15px;">delhi jn</span></div>
+
+<div class="a1 tt">10:00
+<div class="c-timeline"><div class="dot"></div><div class="dot2"></div></div>
+<br>
+<div class="uul">
+<ul>
+<li>t</li>
+<li>w</li>
+<li>t</li>
+<li>f</li>
+</ul>
+</div></div>
+<div class="a1 pd";><span><b>12:23</b></span><br><span  style="font-size:15px;">kanpur jn</span></div>
+<div class="a1"><button type="button" id="book1" onclick="show5()">Check Availability</button></div>
+<br><hr>
+
+<div class="fc" id="sh5">
+<div class="x1">
+<span id="att1" class="zz1">General</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx1">Rs.400.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz1();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att2" class="zz2">Sleeper</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx2">Rs.500.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz2();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att3" class="yz3">AC 3 tier</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx3">Rs.600.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz3();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att4" class="yz4">AC 2 tier</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx4">Rs.700.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz4();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att5" class="yz5">First AC</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx5">Rs.800.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz5();za2()">Book Now</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<div class="ss">
+<div class="a1"><b style="color:blue;font-size:19px"><span id="a6">Maharastra - Delhi Express</span></b><br><span style="font-size:15px;"><b>Train no-</b><span id="b6">12229</span></span></div>
+<div class="a1"><span><b>13:33</b></span><br><span style="font-size:15px;">delhi jn</span></div>
+
+<div class="a1 tt">10:00
+<div class="c-timeline"><div class="dot"></div><div class="dot2"></div></div>
+<br>
+<div class="uul">
+<ul>
+<li>t</li>
+<li>w</li>
+<li>t</li>
+<li>f</li>
+</ul>
+</div></div>
+<div class="a1 pd";><span><b>16:33</b></span><br><span  style="font-size:15px;">kanpur jn</span></div>
+<div class="a1"><button type="button" id="book1" onclick="show6()">Check Availability</button></div>
+<br><hr>
+
+<div class="fc" id="sh6">
+<div class="x1">
+<span id="att1" class="zz1">General</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx1">Rs.400.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz1();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att2" class="zz2">Sleeper</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx2">Rs.500.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz2();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att3" class="yz3">AC 3 tier</span><br>
+<span style="color:#7ed521;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx3">Rs.600.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz3();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att4" class="yz4">AC 2 tier</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx4">Rs.700.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz4();za2()">Book Now</button></a>
+</div>
+
+<div class="x1">
+<span id="att5" class="yz5">First AC</span><br>
+<span style="color:red;font-size:15px"><b>RLWL39/WL12</b></span><br>
+<span id="xx5">Rs.800.00</span><br><br>
+<a href="b.html"><button type="button" id="book" onclick="savezz5();za2()">Book Now</button></a>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<br><br><br>
+
+
+
+
+
+<div class="last">
+<div class="cst">
+<div class="feature e1">
+<h4>Features</h4>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+</div>
+
+<div class="bwu e2">
+<h4>Book with us</h4>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Train Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+
+</div>
+
+<div class="info e3">
+<h4> Info </h4>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<a href="contact.html" style="color:white;text-decoration:none;" ><span>Contact Us</span><br></a>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<span>FAQs</span><br>
+</div>
+
+<div class="about e4" style="width:600px;">
+<h4>TtRAIN</h4>
+<span>TtRAIN is a one stop solution that furnishes an expanse of data-based travel 
+discovery at your disposal. So get connected for an inclusive experience of Smart 
+Train Ticket booking & journey information.</span><br><br>
+<h4>payment and security</h4>
+<span class="cards c1"></span>
+<span class="cards c2"></span>
+<span class="cards c3"></span>
+<span class="cards c4"></span>
+<span class="cards c5"></span>
+<span class="cards c6"></span>
+<br><br>
+<h4>follow us on</h4>
+<a href="https://www.facebook.com/" class="ff1 fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/?lang=en" class="ff2 fa fa-twitter" target="_blank"></a>
+<a href="https://www.youtube.com/" class="ff3 fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/" class="ff4 fa fa-instagram" target="_blank"></a>
+<a href="https://www.snapchat.com/" class="ff5 fa fa-snapchat-ghost" target="_blank"></a>
+<br><br><br>
+<footer>
+<span style="font-size:13px;">
+Copyright © 2021 TtRAIN </span>
+
+</footer>
+
+
+
+
+
+</body>
+<script>
+
+function show1()
+{
+document.getElementById("sh1").style.display="flex";
+document.getElementById("sh2").style.display="none";
+document.getElementById("sh3").style.display="none";
+document.getElementById("sh4").style.display="none";
+document.getElementById("sh5").style.display="none";
+document.getElementById("sh6").style.display="none";
+}
+
+function show2()
+{
+document.getElementById("sh2").style.display="flex";
+document.getElementById("sh1").style.display="none";
+document.getElementById("sh3").style.display="none";
+document.getElementById("sh4").style.display="none";
+document.getElementById("sh5").style.display="none";
+document.getElementById("sh6").style.display="none";
+}
+function show3()
+{
+document.getElementById("sh3").style.display="flex";
+document.getElementById("sh2").style.display="none";
+document.getElementById("sh1").style.display="none";
+document.getElementById("sh4").style.display="none";
+document.getElementById("sh5").style.display="none";
+document.getElementById("sh6").style.display="none";
+}
+function show4()
+{
+document.getElementById("sh4").style.display="flex";
+document.getElementById("sh2").style.display="none";
+document.getElementById("sh1").style.display="none";
+document.getElementById("sh3").style.display="none";
+document.getElementById("sh5").style.display="none";
+document.getElementById("sh6").style.display="none";
+}
+function show5()
+{
+document.getElementById("sh5").style.display="flex";
+document.getElementById("sh2").style.display="none";
+document.getElementById("sh1").style.display="none";
+document.getElementById("sh4").style.display="none";
+document.getElementById("sh3").style.display="none";
+document.getElementById("sh6").style.display="none";
+}
+function show6()
+{
+document.getElementById("sh6").style.display="flex";
+document.getElementById("sh2").style.display="none";
+document.getElementById("sh1").style.display="none";
+document.getElementById("sh4").style.display="none";
+document.getElementById("sh5").style.display="none";
+document.getElementById("sh3").style.display="none";
+}
+
+function saveData()
+ { var sfrom = document.getElementById("from1").value;
+ localStorage.setItem("getfrom",sfrom);
+
+ var sto = document.getElementById("to1").value;
+ localStorage.setItem("getto",sto);
+
+ var sdt = document.getElementById("dt1").value;
+ localStorage.setItem("getdate",sdt);
+
+}
+
+
+ document.getElementById("from").innerHTML=localStorage.getItem("getfrom");
+ document.getElementById("to").innerHTML=localStorage.getItem("getto");
+document.getElementById("dt").innerHTML=localStorage.getItem("getdate");
+
+function za1(){
+var y = document.getElementById("b1").innerHTML;
+ localStorage.setItem("tno",y);
+var x = document.getElementById("a1").innerHTML;
+ localStorage.setItem("tna",x);
+}
+
+function za2(){
+var y = document.getElementById("b2").innerHTML;
+ localStorage.setItem("tno",y);
+var x = document.getElementById("a2").innerHTML;
+ localStorage.setItem("tna",x);
+}
+
+
+function za3(){
+var y = document.getElementById("b3").innerHTML;
+ localStorage.setItem("tno",y);
+var x = document.getElementById("a3").innerHTML;
+ localStorage.setItem("tna",x);
+}
+
+
+function savezz1(){
+var w = document.getElementById("att1").innerHTML;
+ localStorage.setItem("type1",w);
+var z = document.getElementById("xx1").innerHTML;
+ localStorage.setItem("cost1",z);
+}
+
+function savezz2(){
+var w = document.getElementById("att2").innerHTML;
+ localStorage.setItem("type1",w);
+var z = document.getElementById("xx2").innerHTML;
+ localStorage.setItem("cost1",z);
+}
+
+function savezz3(){
+var w = document.getElementById("att3").innerHTML;
+ localStorage.setItem("type1",w);
+var z = document.getElementById("xx3").innerHTML;
+ localStorage.setItem("cost1",z);
+}
+
+function savezz4(){
+var w = document.getElementById("att4").innerHTML;
+ localStorage.setItem("type1",w);
+var z = document.getElementById("xx4").innerHTML;
+ localStorage.setItem("cost1",z);
+}
+
+function savezz5(){
+var w = document.getElementById("att5").innerHTML;
+ localStorage.setItem("type1",w);
+var z = document.getElementById("xx5").innerHTML;
+ localStorage.setItem("cost1",z);
+}
+
+
+
+
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+
+function smyucook(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username").value;
+}
+
+function smyucook1(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username1").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username1").value;
+
+}
+
+
+function checkCookie() {
+  var user = localStorage.getItem("myusername");
+
+  if (user != "") {
+   
+document.getElementById("myuser").style.display = "block";
+document.getElementById("myuser").innerHTML=user;
+  } 
+}
+
+
+
+</script>
+</html>

@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image{border:2px solid cyan;
+background-image:url("https://images.railyatri.in/assets/trains/header_background-274fdc43450c9f177484962df9cc3c78bbbfaa43983cc03c9ad74b41be61f66e.png");
+background-repeat:no-repeat;
+background-size:100% 100%;
+height:23vw;
+  position: relative;}
+
+.header {
+overflow: hidden;
+background-image: linear-gradient(90deg,orange,crimson,darkmagenta);
+padding: 5px 10px;}
+
+.aa {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+z-index:1;
+margin:5px;
+}
+
+
+.ab {
+  float: right;
+margin:5px;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+z-index:1;
+background-color: dodgerblue;
+  color: white;
+height:45px;
+
+}
+
+
+.logo {
+  height:50px;
+width:50px;
+border-radius:50px;
+margin-right:20px;
+float:left;
+vertical-align:10%;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a {color:white;}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.ab:hover{background-color:#ddd;}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+
+.flex{font-size:2vw;}
+.flex img{height:30px !important;
+width:30px !important;}
+
+.locate{width:70%  !important;}
+
+
+
+
+}
+
+
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.button{border:none;
+background-color:transparent;
+color:white;
+font-size:17px;}
+
+.form-inline input {
+  vertical-align: middle;
+height:40px;
+width:20%;
+  
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+height:40px;
+border-top-right-radius:8px;
+border-bottom-right-radius:8px;
+}
+
+.form-inline button:hover {
+  background-color: blue;
+}
+.frm { margin-left:23vw; 
+  position: absolute;
+top:50%;
+width:80%;
+border-radius:5px;}
+
+.fo{font-family: 'Lobster', cursive;
+font-size:30px;
+color:orange;}
+
+.in{font-family: 'Lobster', cursive;
+font-size:30px;
+color:orangered;
+}
+
+ .lt{   font: 14px/1.7 "Open Sans",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 0 30px;
+    color: rgba(0,0,0,.87);
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.m1{border: 2px solid red;
+border-radius:10px;
+width:450px;
+height:100px;
+position: relative;
+flex:1;
+margin-right: 20px;
+padding:5px;
+background-color:white;
+}
+
+.m1 span {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+font-weight: bold;
+}
+
+.m2{border: 2px solid red;
+border-radius:10px;
+width:450px;
+height:100px;
+position: relative;
+flex:1;
+margin-right: 20px;
+padding:5px;
+background-color:white;
+
+}
+
+.m2 span {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+font-weight: bold;
+}
+.flex{display:flex;
+padding :30px;
+width:80%;
+margin:auto;}
+
+
+.blink {
+border:none;
+position: relative;
+top:-45px;
+left:-30px;
+background: none;
+padding: 6px;
+height: 40px;
+width: 40px;
+    }
+
+.blinkinr2 {
+display: inline-block;
+width: 8px;
+height: 8px;
+margin-right: 0;
+background: #4edc24;
+border-radius: 50%;
+margin-left: 5px;
+    }
+
+.blink:after {
+content: "";
+position: absolute;
+border-radius: 100%;
+transform-origin: 50% 50%;
+left: 18px ;
+background: #4edc24;
+top: 16px;
+width: 8px;
+height: 8px;
+    }
+	@keyframes nTLI {
+0%,35% {
+transform: scale(0);
+opacity: 1}
+
+50% {
+transform: scale(2.5);
+opacity: .8
+    }
+
+to {
+opacity: 0;
+transform: scale(6)
+    }
+}
+
+.blink:after {
+animation: nTLI 1.2s ease-out infinite;
+animation-delay: .5s;
+    }
+
+.mm1{padding:20px;}
+.mm1:hover{  box-shadow: 2px 3px 5px 3px #888888;
+}
+
+input{
+color:crimson;}
+
+.form11{border-top-left-radius:8px;
+border-bottom-left-radius:8px;}
+
+.middlepage{
+background-color:#eeeeee;  }
+
+#n2c{
+background-color:#eeeeee;  }
+
+#n1,#n2{margin-left:15%;
+margin-right:15%;
+text-align: justify;
+}
+
+
+
+
+
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+width:100%;
+height:150px;    
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(#eeeeee,#86377b, #27273c);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+
+
+
+.rf {  
+animation-name: rf;
+animation-duration: 6s;
+animation-iteration-count: 1;
+
+}
+
+.floating {  
+animation-name: floating;
+animation-duration: 3s;
+animation-iteration-count: 3;
+animation-timing-function: ease-in-out;
+}
+  
+@keyframes floating {
+0% { transform: translate(0,  0px); }
+50%  { transform: translate(0, 35px); }
+100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes rf {
+0% {
+transform: scale(0,0);}
+}
+10% {
+transform: scale(0.1,0.1);}
+}
+20% {
+transform: scale(0.2,0.2);}
+}
+30% {
+transform: scale(0.3,0.3);}
+}
+40% {transform: rotate(60deg);
+transform: scale(0.4,0.4);}
+}
+50% {
+transform: scale(0.5,0.5);}
+}
+50% {
+transform: scale(0.5,0.5);}
+}
+100% {
+transform: scale(1,1);}
+}
+
+#notice{font-size:10px;}
+
+.last{width:100%;
+height:475px;
+
+background-image: linear-gradient(90deg,#363636,black);
+
+color:white;}
+
+.xc1{
+margin:auto;
+}
+
+.last{width:100%;
+margin:auto;}
+
+.e1,.e2,.e3,.e4{
+
+float:left;
+font-size:13px;
+margin:10px;
+padding:10px;
+transition:margin-left 2s;
+}
+
+.e1 span,.e2 span,.e3 span,.e4 span{
+transition:margin-left 1s;}
+
+.c1{
+display:inline-block;
+position:relative;;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Old_Visa_Logo.svg/1024px-Old_Visa_Logo.svg.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c2{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c3{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://i0.wp.com/www.ecommerce-nation.com/wp-content/uploads/2018/01/paypal.png?fit=1000%2C600&ssl=1");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c4{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png");
+width:70px;
+height:40px;
+background-color:white;}
+
+.c5{
+display:inline-block;
+position:relative;
+background-position: -1px -10px;
+background-size: cover;
+background-image:url("https://www.searchpng.com/wp-content/uploads/2020/06/Paytm_Circle_Logo_PNG-715x715.jpg");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c6{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://download.logo.wine/logo/PhonePe/PhonePe-Logo.wine.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+
+.e1,.e2,.e3{width:15%;}
+
+h4{font-size:15px;
+text-transform: uppercase;}
+
+.about{width:300px;}
+
+.fa{text-decoration:none;
+color:white;
+width:40px;
+height:40px;
+padding:5px;
+text-align:center;
+font-size:25px;
+border:2px solid white;
+border-radius:50%;}
+
+.ff1{transition:background-color 2s;}
+
+.ff1:hover{
+animation: rot 2s;
+background-color:#3B5998;
+}
+
+
+.ff2{transition:background-color 2s;}
+
+.ff2:hover{
+animation: rot 2s;
+background-color:#55ACEE;
+}
+.ff3{transition:background-color 2s;}
+
+.ff3:hover{
+animation: rot 2s;
+background-color:#bb0000;
+}
+.ff4{transition:background-color 2s;}
+
+.ff4:hover{
+animation: rot 2s;
+background-color:#125688;
+}
+.ff5{transition:background-color 2s;}
+
+.ff5:hover{
+animation: rot 2s;
+background-color:#fffc00;
+}
+
+@keyframes rot {
+  50% {transform: rotate(360deg);}
+}
+
+
+.e1 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+
+.e2 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+.e3 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;}
+
+.cst{margin-left:80px;}
+
+
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+
+.form-popup {
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid MediumSpringGreen;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: limegreen;;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+.open-button1 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup1 {
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid MediumSpringGreen;
+  z-index: 9;
+}
+
+.form-container1 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container1 input[type=text], .form-container1 input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container1 input[type=text]:focus, .form-container1 input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container1 .btn1 {
+  background-color: limegreen;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container1 .cancel1 {
+  background-color: red;
+}
+
+
+.form-container1 .btn1:hover, .open-button1:hover {
+  opacity: 1;
+}
+
+
+.pop{width:60%;
+height:auto;
+border:2px solid grey;
+margin:auto;
+border-radius:5px;
+position:absolute;
+z-index:1;
+background-color:white;
+font-size:15px;
+top:20%;
+left:20%;
+display:none;}
+
+.alert{height:40px;
+background-color:darkblue;
+color:white;
+text-align:center;
+padding:10px;
+opacity:0.8;
+width:95%;}
+
+.close{color:white;
+
+width:5%;
+text-align:center;
+
+font-size:3vw;}
+
+.close:hover,
+.close:focus {
+  color:red;
+  text-decoration: none;
+  cursor: pointer;
+}
+.a{text-decoration:none;}
+.a:active,.a:visited{color:blue;}
+
+
+.box{
+width:100%;
+height:100%;
+positio:relative;}
+
+
+
+.box div{
+position:absolute;
+width:60px;
+height:60px;
+background-color:lightblue;
+border:7px solid cyan;
+border-radius:50%;
+
+}
+
+.box div:nth-child(1){
+top:12%;
+left:42%;
+animation:grow 10s linear infinite;
+}
+
+.box div:nth-child(2){
+top:70%;
+left:50%;
+animation:grow 7s linear infinite;
+}
+.box div:nth-child(3){
+top:17%;
+left:6%;
+animation:grow 9s linear infinite;
+}
+.box div:nth-child(4){
+top:20%;
+left:60%;
+animation:grow 6s linear infinite;
+}
+.box div:nth-child(5){
+top:67%;
+left:10%;
+animation:grow 8s linear infinite;
+}
+.box div:nth-child(6){
+top:80%;
+left:40%;
+animation:grow 15s linear infinite;
+}
+.box div:nth-child(7){
+top:60%;
+left:800%;
+animation:grow 10s linear infinite;
+}
+.box div:nth-child(8){
+top:32%;
+left:25%;
+animation:grow 16s linear infinite;
+}
+.box div:nth-child(9){
+top:90%;
+left:25%;
+animation:grow 9s linear infinite;
+}
+.box div:nth-child(10){
+top:400%;
+left:80%;
+animation:grow 5s linear infinite;
+}
+
+.box div:nth-child(11){
+top:300%;
+left:90%;
+animation:grow 13s linear infinite;
+}
+.box div:nth-child(12){
+top:400%;
+left:10%;
+animation:grow 4s linear infinite;
+}
+.box div:nth-child(13){
+top:200%;
+left:30%;
+animation:grow 5s linear infinite;
+}
+.box div:nth-child(14){
+top:100%;
+left:40%;
+animation:grow 9s linear infinite;
+}
+.box div:nth-child(15){
+top:150%;
+left:80%;
+animation:grow 4s linear infinite;
+}
+.box div:nth-child(12){
+top:350%;
+left:50%;
+animation:grow 11s linear infinite;
+}
+.box div:nth-child(16){
+top:250%;
+left:80%;
+animation:grow 9s linear infinite;
+}
+.box div:nth-child(17){
+top:375%;
+left:30%;
+animation:grow 15s linear infinite;
+}
+
+.box div:nth-child(18){
+top:300%;
+left:14%;
+animation:grow 3s linear infinite;
+}
+.box div:nth-child(19){
+top:200%;
+left:60%;
+animation:grow 7s linear infinite;
+}
+.box div:nth-child(20){
+top:400%;
+left:4%;
+animation:grow 5s linear infinite;
+}
+
+@keyframes grow{
+
+0%{
+transform:scale(0) translateY(0) rotate(0);
+opcity: 1;
+}
+100%{
+transform:scale(1.3) translateY(-500px);
+opcity: 0;
+}
+
+}
+
+
+p,h1,h2,h3,h4,h5,span{z-index:10;}
+
+
+
+#myuser{display:none;}
+
+
+#counter {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: grey;
+  border-radius:5px;
+}
+
+.counter-item {
+  background-color: #f1f1f1;
+  width: 20px;
+  margin: 5px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+  border-radius:4px;
+  color:black;
+}
+</style>
+<body onload="bt();counter();" >
+
+<div class="box" ">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+
+
+<div class="pop" id="pop">
+<div class="alert" style="float:left;">Alert</div>
+<button onclick="popclose();typeWriter();checkCookie();"   class="close" style="float:left;background-color:orange;height:40px;border:none;width:5%;text-align:center;position:relative;"><span style="margin: auto;">&times;</span></button>
+<br><br>
+<div style="padding:10px;">
+<p><b>Hon'ble Prime Minister message on "Public Health Response to COVID-19: Campaign for COVID-Appropriate Behaviour".
+ <a class="a" href="http://contents.irctc.co.in/en/Covid19PMMessage.pdf">Wear Mask, Follow Physical Distancing, Maintain Hand Hygine.</a>
+<br><br><br>
+Get your favourite food at your train seat through e-Catering available at selected stations.
+<br><br>
+COVID 19 Alert:
+<ul>
+<li><a  class="a" href="http://contents.irctc.co.in/en/CovidVaccinationInfoEng.pdf"> Information on Covid 19 Vaccination Programme</a></li>
+<br><li>All passengers are hereby informed that downloading of Aarogya Setu App on their mobile phone, that they are carrying along, is advisable.</li>
+<br><li>All Passenger to kindly note that on arrival at their destination, the traveling passengers will have to adhere to such health protocols as are prescribed by the destination State/UT.<a  class="a" href="http://contents.irctc.co.in/en/stateWiseAdvisory.html"> Click Here to see state wise advisory on Arrival(As available).</a> For other states, State Govt websites may be visited to ascertain the same.</li>
+<br><li>Though various State Governments' Advisories have been provided on IRCTC Website, Still Users are advised to surf Destination State Government URL/ Website for latest instructions on Covid-19 pandemic and Covid appropriate behaviour.</li>
+<br><li> Catering Service is not available and catering charges not included in the fare.</li>
+<br><li>No blanket and linen shall be provided in the train.</li>
+</ul>
+</b></p>
+</div>
+
+
+
+</div>
+
+
+ <div id="all">
+<div class="header">
+<span class="aa fo" style="color:lightgreen;">T <span class="in" style="color:snow;"> t </span>RAIN</span>
+ 
+  <div class="header-left">
+    <a class="aa active" href="main page.html">Home</a>
+    <a class="aa" href="check.html">Book Tickets</a>
+    <a class="aa" href="locate.html">Locate</a>
+    <a class="aa" href="contact.html">Contact</a>
+    <a class="aa"  href="about.html">About</a>
+    <span class="ab"><button class="button" onclick="openForm()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> Login</button></span>
+    <span class="ab"><button  class="button "onclick="openForm1()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> SignUp</button></span>
+<span  class="ab" style="background-color:lightgreen;width:100px;position:relative;"><span style="font-size:10px;vertical-align:20px;line-height:0.00001;">Welcome back</span><span  id="myuser"  style="position:absolute;top:40%;left:20%;"> SignUp</span></span>
+
+  </div>
+</div>
+
+
+
+
+<div class="form-popup" id="myForm" onsubmit="return false;" style="z-index:15;">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="smyucook()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+<div class="form-popup1" id="myForm1" style="z-index:15;">
+  <form class="form-container1" onsubmit="return false;">
+    <h1>Sign Up</h1>
+
+    <label for="username1"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" id="username1" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Comfirm Password" name="psw" required>
+
+    <button type="submit" class="btn1" onclick="smyucook1()">Signup</button>
+    <button type="button" class="btn1 cancel1" onclick="closeForm1()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+<div class="image">
+
+<div class="frm floating">
+<form class="form-inline" action="check.html">
+  
+  <input type="text" id="from" class="form11" placeholder="Starting place" required>
+  
+  <input type="text" id="to" placeholder="Final Destination" required>
+  
+  <input type="date" id="dt" required>
+    <button id="bt1" type="submit" onclick="saveData()">Check Availability</button>
+</form></div></div>
+
+<marquee><div id="notice" style="font-size:15px;color:red"><b>Please help Indian railways and government of India in moving towards a digitized and cashless economy. Eradicate black money.</b></div></marquee>
+
+<div class="middlepage">
+
+
+<center><span class="lt" id="demo"></span><span class="fo">T <span class="in"> t </span>RAIN</span></center>
+<center><p id="demo1">#</p></center>
+<br><br>
+<div class="bbox">
+
+
+
+<div class="m1 xc1"><img src="https://www.abhibus.com/trains/images/multi-devices1.png"
+style="height:90px;width:90px;">
+<span style="font-weight:normal;font-size:16px;"><b>Easy and Fast Bookings</b><br>Lightening Fast bookings on TtRAIN apps and web. Get your tickets instantly!</span></div>
+<br>
+
+
+<div class="flex">
+<div class="m1"><img src="https://images.ixigo.com/image/upload/f_auto/train/ecb835b55223186c49d55750b422ed10-oscpe.png"
+style="height:90px;width:90px;">
+<span>₹0 Service Charge on your 1st booking</div></span>
+<br>
+<div class="m1"><img src="https://images.ixigo.com/image/upload/f_auto/train/8c833f43b5d07c7d67d82e26f7bccd26-xpoln.png"
+style="height:90px;width:90px;">
+<span>Hassle-Free Cancellation of IRCTC Train Tickets
+</div></span></div>
+<br>
+<div class="flex">
+<div class="m2"><img src="https://images.ixigo.com/image/upload/f_auto/train/a21427142a38e7331574b034aa4a687a-lwpxr.png"
+style="height:90px;width:90px;">
+<span>Instant Refund on IRCTC Train Reservation Cancellation
+</div></span>
+<br>
+<div class="m2"><img src="https://images.ixigo.com/image/upload/f_auto/train/d522fcf3866c18b343060ab3cb49b3b1-xnmqx.png"
+style="height:90px;width:90px;">
+<span>24*7 Support for IRCTC Train Ticket Booking
+</div></span></div>
+<div>
+
+<a href="locate.html" style="cursor:pointer;color:black;">
+<div class="flex locate" style="width:40%;">
+<div class="m1 mm1" style="border:1px solid tomato;background-color:white;">
+<i class="material-icons" style="font-size:60px;color:red;">train</i>
+<button style="z-index:0;" class="blink">
+<div class="blinkinr2"></div>
+</button>
+<span class="btt"><b>Get to know the Live Status of Indian railway train and delays, if any.</b></span>
+</div></div></a>
+</div></div>
+</div>
+
+
+
+
+
+<div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br>
+
+
+
+<div id="n1">
+<h2>Book IRCTC Train Tickets on <span class="fo">T <span class="in"> t </span>RAIN</span></h2>
+<p style="font-size:15px;">TtRAIN is one of the leading online IRCTC (Indian Railways Catering and Tourism) 
+train ticket booking platforms. A popular mobile app with Its wide span of railway 
+reservation services. Our unique and excellent IRCTC train tracking and enquiry algorithm 
+helps with a quick prediction of the booked IRCTC PNR number. RailYatri also helps you in
+ deciding when is the best time to book a train seat to avoid waitlisting. We help in 
+making your IRCTC train ticket booking online experience smooth and hassle-free. 
+At TtRAIN, we provide you with a one-click solution to all your railway reservations
+ and booking enquiries and help increase the probability of getting a confirmed 
+IRCTC train ticket. Through our user-friendly train ticket booking mobile application,
+ RailYatri travellers can also stay updated on the IRCTC train status, check closely the 
+status of trains between stations, train seat and ticket availability, correct train 
+time-table, live streaming of arrival & departure of railway trains. Online railway 
+ticket booking can easily be done via PhonePe, UPI, or using the special RY cash from the
+ RY wallet option.
+
+Train travellers need not worry anymore! Allow RailYatri to fix everything for you. 
+Not only from managing your PNR prediction, but you are also provided with many 
+engaging features like Rail Wisdom, live train announcements and IRCTC ticket fare
+ enquiry & fare calculator.</p>
+</div>
+<br><br>
+<div id="n2c"><div id="n2">
+<h2>FAQs</h2>
+<h5>Q) Why should I book train tickets with TtRAIN?</h5>
+<p  style="font-size:15px;"><b>A) </b>Apart from being one of the most reliable, mobile-friendly train ticket booking platform, TtRAIN dedicatedly works towards providing our users insightful information about train travel. TtRAIN is your one-step solution for all your travel discoveries!</p>
+
+<h5>Q) Can I show the train ticket on mobile?</h5>
+<p  style="font-size:15px;"><b>A) </b>Yes you can! Users can now easily book train tickets on their mobile phones with TtRAIN and save paper. An M-ticket will be sent post booking, that allows passengers to board the train without taking a printout.</p>
+
+<h5>Q) How can I contact TtRAIN for any query related to trains?</h5>
+<p  style="font-size:15px;"><b>A) </b>We are always connected to our users! For any query/ suggestions, you can write to us at feedback@TtRAIN.in or call on 134567989</p>
+
+<h5>Q) Why should I book train tickets with TtRAIN?</h5>
+<p  style="font-size:15px;"><b>A) </b>Apart from being one of the most reliable, mobile-friendly train ticket booking platform, TtRAIN dedicatedly works towards providing our users insightful information about train travel. TtRAIN is your one-step solution for all your travel discoveries!</p>
+
+<h5>Q) Can I show the train ticket on mobile?</h5>
+<p  style="font-size:15px;"><b>A) </b>Yes you can! Users can now easily book train tickets on their mobile phones with TtRAIN and save paper. An M-ticket will be sent post booking, that allows passengers to board the train without taking a printout.</p>
+
+<h5>Q) How can I contact TtRAIN for any query related to trains?</h5>
+<p  style="font-size:15px;"><b>A) </b>We are always connected to our users! For any query/ suggestions, you can write to us at feedback@TtRAIN.in or call on 134567989</p>
+
+<h5>Q) Why should I book train tickets with TtRAIN?</h5>
+<p  style="font-size:15px;"><b>A) </b>Apart from being one of the most reliable, mobile-friendly train ticket booking platform, TtRAIN dedicatedly works towards providing our users insightful information about train travel. TtRAIN is your one-step solution for all your travel discoveries!</p>
+
+<h5>Q) Can I show the train ticket on mobile?</h5>
+<p  style="font-size:15px;"><b>A) </b>Yes you can! Users can now easily book train tickets on their mobile phones with TtRAIN and save paper. An M-ticket will be sent post booking, that allows passengers to board the train without taking a printout.</p>
+
+<h5>Q) How can I contact TtRAIN for any query related to trains?</h5>
+<p  style="font-size:15px;"><b>A) </b>We are always connected to our users! For any query/ suggestions, you can write to us at feedback@TtRAIN.in or call on 134567989</p>
+
+<h5>Q) Why should I book train tickets with TtRAIN?</h5>
+<p  style="font-size:15px;"><b>A) </b>Apart from being one of the most reliable, mobile-friendly train ticket booking platform, TtRAIN dedicatedly works towards providing our users insightful information about train travel. TtRAIN is your one-step solution for all your travel discoveries!</p>
+
+<h5>Q) Can I show the train ticket on mobile?</h5>
+<p  style="font-size:15px;"><b>A) </b>Yes you can! Users can now easily book train tickets on their mobile phones with TtRAIN and save paper. An M-ticket will be sent post booking, that allows passengers to board the train without taking a printout.</p>
+
+<h5>Q) How can I contact TtRAIN for any query related to trains?</h5>
+<p  style="font-size:15px;"><b>A) </b>We are always connected to our users! For any query/ suggestions, you can write to us at feedback@TtRAIN.in or call on 134567989</p>
+
+<br><br>
+</div></div>
+
+
+
+<div class="last" style="position:relative;">
+<div class="cst">
+<div class="feature e1">
+<h4>Features</h4>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+</div>
+
+<div class="bwu e2">
+<h4>Book with us</h4>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Train Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+
+</div>
+
+<div class="info e3">
+<h4> Info </h4>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<a href="contact.html" style="color:white;text-decoration:none;" ><span>Contact Us</span><br></a>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<span>FAQs</span><br>
+</div>
+
+<div class="about e4" style="width:600px;">
+<h4>TtRAIN</h4>
+<span>TtRAIN is a one stop solution that furnishes an expanse of data-based travel 
+discovery at your disposal. So get connected for an inclusive experience of Smart 
+Train Ticket booking & journey information.</span><br><br>
+<h4>payment and security</h4>
+<span class="cards c1"></span>
+<span class="cards c2"></span>
+<span class="cards c3"></span>
+<span class="cards c4"></span>
+<span class="cards c5"></span>
+<span class="cards c6"></span>
+<br><br>
+<h4>follow us on</h4>
+<a href="https://www.facebook.com/" class="ff1 fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/?lang=en" class="ff2 fa fa-twitter" target="_blank"></a>
+<a href="https://www.youtube.com/" class="ff3 fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/" class="ff4 fa fa-instagram" target="_blank"></a>
+<a href="https://www.snapchat.com/" class="ff5 fa fa-snapchat-ghost" target="_blank"></a>
+<br><br><br>
+<footer>
+<span style="font-size:13px;">
+Copyright © 2021 TtRAIN </span>
+
+</footer>
+
+
+</div>
+<div id="" style="position:absolute;top:44%;left:27%;color:white;text-align:center;width:270px;">No of Visitors to our site</div>
+<div id="counter" style="position:absolute;top:50%;left:30%;  box-shadow: 0px 0px 0px 1px #fff inset;">
+          <span class="counter-item">0</span>
+          <span class="counter-item">1</span>
+          <span class="counter-item">0</span>
+          <span class="counter-item">3</span>
+          <span class="counter-item">0</span>
+          <span class="counter-item">6</span>
+</div>
+
+
+</div>
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+
+function saveData()
+ { var sfrom = document.getElementById("from").value;
+ localStorage.setItem("getfrom",sfrom);
+
+ var sto = document.getElementById("to").value;
+ localStorage.setItem("getto",sto);
+
+ var sdt = document.getElementById("dt").value;
+ localStorage.setItem("getdate",sdt);
+
+}
+
+
+var i = 0;
+var txt = 'Why Book IRCTC Train Tickets on ';
+var speed = 80;
+
+var i1 = 0;
+var txt1 = 'Official IRCTC Ticket Booking Partner';
+var speed1 = 80;
+
+
+function typeWriter() {
+
+setTimeout(function xxx(){
+
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(xxx, speed);
+  }
+},1000);
+
+
+setTimeout(function xxx1(){
+
+  if (i1 < txt1.length) {
+    document.getElementById("demo1").innerHTML += txt1.charAt(i1);
+    i1++;
+    setTimeout(xxx1, speed1);
+  }
+},3000);
+
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+
+
+function bt(){
+  document.getElementById("pop").style.display = "block";
+document.getElementById("pop").style.opacity="0.9";
+document.getElementById("all").style.opacity="0.4";
+
+}
+
+function popclose() {
+  document.getElementById("pop").style.display = "none";
+document.getElementById("all").style.opacity="1";
+}
+
+function smyucook(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username").value;
+}
+
+function smyucook1(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username1").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username1").value;
+
+}
+
+
+function checkCookie() {
+  var user = localStorage.getItem("myusername");
+
+  if (user != "") {
+    
+document.getElementById("myuser").style.display = "block";
+document.getElementById("myuser").innerHTML=user;
+  } 
+}
+
+
+
+function counter(){
+  
+  
+
+let x=parseInt(localStorage.getItem("noof"));
+
+
+x=x+1;
+localStorage.setItem("noof",x);
+document.getElementsByClassName("counter-item")[5].innerHTML = x%10;
+x=(x-x%10)/10;
+document.getElementsByClassName("counter-item")[4].innerHTML = x%10;
+x=(x-x%10)/10;
+document.getElementsByClassName("counter-item")[3].innerHTML = x%10;
+x=(x-x%10)/10;
+document.getElementsByClassName("counter-item")[2].innerHTML = x%10;
+x=(x-x%10)/10;
+document.getElementsByClassName("counter-item")[1].innerHTML = x%10;
+x=(x-x%10)/10;
+document.getElementsByClassName("counter-item")[0].innerHTML = x%10;
+x=(x-x%10)/10;
+
+
+}
+
+</script>
+</html>
+
+

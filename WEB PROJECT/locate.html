@@ -1,0 +1,1015 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+  .heading{  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0;
+    box-sizing: border-box;
+    color: #1f6de4;
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.5);
+    padding: 10px 0 15px;
+    position: relative;
+    text-align: center;
+    line-height: normal;}
+
+input{width:50%;
+border:none;
+height:30px;
+padding:5px;
+color:#228ee8;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box1{
+width:20%;
+padding: 5px;
+float:left;
+height:50px;
+}
+.bon{height:40px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+width:90%;
+background-image:linear-gradient(to bottom, #4188f5 0%,#487dce 100%);
+color:white;
+border:none;
+border-radius:5px;}
+
+.day{
+width:50%;
+height:50px;
+}
+
+table{  border-collapse: collapse;
+width:50%;
+}
+table,th,tr,td{border:1px solid white;
+text-align:center;}
+th{
+background-image:linear-gradient(to bottom, #0766bd 0%,#487dce 100%);
+color:white;
+border-radius:5px;
+padding:5px;
+}
+.red{
+width:20px;
+height:20px;
+border:2px solid limegreen;
+background-color:white;
+border-radius:20px;}
+
+
+.rrr{
+width:20px;
+height:20px;
+border:2px solid red;
+background-color:white;
+border-radius:20px;}
+
+
+.mid{float:left;
+margin:5px;}
+
+
+
+.blink {
+border:none;
+position: relative;
+top:-5px;
+left:0px;
+background: none;
+padding: 6px;
+height: 40px;
+width: 40px;
+    }
+
+.blinkinr2 {
+display: inline-block;
+width: 15px;
+height: 15px;
+margin-right: 0;
+background: #4edc24;
+border-radius: 50%;
+margin-left: 5px;
+    }
+
+.blink:after {
+content: "";
+position: absolute;
+border-radius: 100%;
+transform-origin: 50% 50%;
+left: 18px ;
+background: #4edc24;
+top: 16px;
+width: 8px;
+height: 8px;
+    }
+	@keyframes nTLI {
+0%,35% {
+transform: scale(0);
+opacity: 1}
+
+50% {
+transform: scale(2.5);
+opacity: .8
+    }
+
+to {
+opacity: 0;
+transform: scale(6)
+    }
+}
+
+.blink:after {
+animation: nTLI 1.2s ease-out infinite;
+animation-delay: .5s;
+    }
+
+#hide{display:none;}
+
+.text{width:50%;
+text-align: justify;
+font-size:15px;}
+
+h2{ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0;
+    box-sizing: border-box;
+    color: #1f6de4;
+    font-size: 17px;
+    font-weight: 400;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.5);
+    padding: 10px 0 15px;
+    position: relative;
+    line-height: normal;}
+
+
+
+
+
+.header {
+overflow: hidden;
+background-image: linear-gradient(90deg,orange,crimson,darkmagenta);
+padding: 5px 10px;}
+
+.aa {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+z-index:1;
+margin:5px;
+}
+.ab {
+  float: right;
+margin:5px;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+z-index:1;
+background-color: dodgerblue;
+  color: white;
+height:45px;
+
+}
+
+.logo {
+  height:50px;
+width:50px;
+border-radius:50px;
+margin-right:20px;
+float:left;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.header span:hover {
+  background-color: #ddd;
+  color: black;
+}
+.header a {color:white;}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.fo{font-family: 'Lobster', cursive;
+font-size:30px;
+color:orange;}
+
+.in{font-family: 'Lobster', cursive;
+font-size:30px;
+color:orangered;
+}
+
+
+
+
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+
+.form-popup {
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+.open-button1 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup1 {
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container1 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container1 input[type=text], .form-container1 input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container1 input[type=text]:focus, .form-container1 input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container1 .btn1 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container1 .cancel1 {
+  background-color: red;
+}
+
+
+.form-container1 .btn1:hover, .open-button1:hover {
+  opacity: 1;
+}
+
+.button{border:none;
+background-color:transparent;
+color:white;
+font-size:17px;}
+
+
+
+
+
+
+.last{width:100%;
+height:475px;
+
+background-image: linear-gradient(90deg,#363636,black);
+
+color:white;}
+
+.xc1{
+margin:auto;
+}
+
+.last{width:100%;
+margin:auto;}
+
+.e1,.e2,.e3,.e4{
+
+float:left;
+font-size:13px;
+margin:10px;
+padding:10px;
+transition:margin-left 2s;
+}
+
+.e1 span,.e2 span,.e3 span,.e4 span{
+transition:margin-left 1s;}
+
+.c1{
+display:inline-block;
+position:relative;;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Old_Visa_Logo.svg/1024px-Old_Visa_Logo.svg.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c2{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c3{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://i0.wp.com/www.ecommerce-nation.com/wp-content/uploads/2018/01/paypal.png?fit=1000%2C600&ssl=1");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c4{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png");
+width:70px;
+height:40px;
+background-color:white;}
+
+.c5{
+display:inline-block;
+position:relative;
+background-position: -1px -10px;
+background-size: cover;
+background-image:url("https://www.searchpng.com/wp-content/uploads/2020/06/Paytm_Circle_Logo_PNG-715x715.jpg");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c6{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://download.logo.wine/logo/PhonePe/PhonePe-Logo.wine.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+
+.e1,.e2,.e3{width:15%;}
+
+h4{font-size:15px;
+text-transform: uppercase;}
+
+.about{width:300px;}
+
+.fa{text-decoration:none;
+color:white;
+width:40px;
+height:40px;
+padding:5px;
+text-align:center;
+font-size:25px;
+border:2px solid white;
+border-radius:50%;}
+
+.ff1{transition:background-color 2s;}
+
+.ff1:hover{
+animation: rot 2s;
+background-color:#3B5998;
+}
+
+
+.ff2{transition:background-color 2s;}
+
+.ff2:hover{
+animation: rot 2s;
+background-color:#55ACEE;
+}
+.ff3{transition:background-color 2s;}
+
+.ff3:hover{
+animation: rot 2s;
+background-color:#bb0000;
+}
+.ff4{transition:background-color 2s;}
+
+.ff4:hover{
+animation: rot 2s;
+background-color:#125688;
+}
+.ff5{transition:background-color 2s;}
+
+.ff5:hover{
+animation: rot 2s;
+background-color:#fffc00;
+}
+
+@keyframes rot {
+  50% {transform: rotate(360deg);}
+}
+
+
+.e1 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+
+.e2 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+.e3 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;}
+
+.cst{margin-left:80px;}
+
+
+
+
+</style>
+
+
+
+
+
+
+<body style="background-color:#e3eef9;margin:0;"  onload="checkCookie()">
+
+
+<div class="header">
+<span class="aa fo" style="color:lightgreen;">T <span class="in" style="color:snow;"> t </span>RAIN</span>
+  <img src="n.jpg" class="logo">
+  <div class="header-left">
+    <a class="aa" href="main page.html">Home</a>
+    <a class="aa" href="check.html">Book Tickets</a>
+    <a class="aa active" href="locate.html">Locate</a>
+    <a class="aa" href="contact.html">Contact</a>
+    <a class="aa"  href="about.html">About</a>
+    <span class="ab"><button class="button" onclick="openForm()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> Login</button></span>
+    <span class="ab"><button  class="button "onclick="openForm1()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> SignUp</button></span>
+<span  class="ab" style="background-color:lightgreen;width:100px;position:relative;"><span style="font-size:10px;vertical-align:20px;line-height:0.00001;">Welcome back</span><span  id="myuser"  style="position:absolute;top:40%;left:20%;"> SignUp</span></span>
+
+  </div>
+</div>
+
+
+
+
+<div class="form-popup" id="myForm" onsubmit="return false;">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="smyucook()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+<div class="form-popup1" id="myForm1">
+  <form class="form-container1" onsubmit="return false;">
+    <h1>Sign Up</h1>
+
+    <label for="username1"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" id="username1" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Comfirm Password" name="psw" required>
+
+    <button type="submit" class="btn1" onclick="smyucook1()">Signup</button>
+    <button type="button" class="btn1 cancel1" onclick="closeForm1()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="heading">Live Train Status</h1>
+<form>
+<center>
+<input id="tra" type="text" placeholder="Searcg by Train name/No....." required>
+</center>
+
+<center><div class="day">
+<div class="box1"><button type="button" class="bon" onclick="show()">Yesterday</button></div>
+<div class="box1"><button type="button"  class="bon" onclick="show()">Today</button></div>
+<div class="box1"><button type="button"  class="bon" onclick="show()">Tommrow</button></div>
+<div class="box1"><button type="button"  class="bon" onclick="show()">2 days ago</button></div>
+<div class="box1"><button type="button"  class="bon" onclick="show()">3 days ago</button></div>
+</div><center>
+</form>
+<marquee style="width:50%;color:red;">Train No-23456 is cancelled due to techical issues,we sincerely apologise for Discomfort</marquee>
+
+<br><br><br>
+<div id="hide">
+<table>
+<tr>
+<th>Station</th>
+<th>Arrives</th>
+<th>Departs</th>
+<th>Late</th>
+<th>Distance</th>
+<th>Platform</th>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+
+<tr style="background-color:#dfffd8;">
+<td><div class="red mid"></div><div class="mid"><b>Hyderabad Decan</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#dfffd8;">
+<td><div class="red mid"></div><div class="mid"><b>Kazipet Jn</b></div></td>
+<td><b>02:30</b></td>
+<td><b>01:65</b></td>
+<td><b>00:30</b></td>
+<td><b>80km</b></td>
+<td><b>3</b></td>
+</tr>
+
+<tr style="background-color:#dfffd8;">
+<td><div class="red mid"></div><div class="mid"><b>Ramagundam</b></div></td>
+<td><b>2:30</b></td>
+<td><b>01:35</b></td>
+<td><b>05:00</b></td>
+<td><b>190km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#dfffd8;">
+<td><div class="red mid"></div><div class="mid"><b>sirpur Decan</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#dfffd8;">
+<td><div class="red mid"></div><div class="mid"><b>Nagpur</b></div></td>
+<td><b>06:30</b></td>
+<td><b>06:35</b></td>
+<td><b>08:00</b></td>
+<td><b>1100km</b></td>
+<td><b>5</b></td>
+</tr>
+
+<tr style="background-color:#dfffd8;">
+<td><div class="red mid"></div><div class="mid"><b>bhopal jn Decan</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#dfffd8;">
+<td><div class="red mid"></div><div class="mid"><b>bddf jn Decan</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#dfffd8;">
+<td><div class="red mid"></div><div class="mid"><b>Charderpur</b></div></td>
+<td><b>06:30</b></td>
+<td><b>06:35</b></td>
+<td><b>70:00</b></td>
+<td><b>900km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#dfffd8;">
+<td><div class="red mid"></div><div class="mid"><b>dgrt Decan</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>70:00</b></td>
+<td><b>170km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="mid">
+
+<button style="z-index:0;" class="blink">
+<div class="blinkinr2"></div>
+</button>
+
+
+</div><div class="mid"><b>Gwalior Decan</b></div></td>
+<td><b>11:30</b></td>
+<td><b>11:35</b></td>
+<td><b>70:00</b></td>
+<td><b>190km</b></td>
+<td><b>9</b></td>
+</tr>
+
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="rrr mid"></div><div class="mid"><b>dfsdf jn</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>70:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="rrr mid"></div><div class="mid"><b>secundarabd adc</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="rrr mid"></div><div class="mid"><b>sanpur Decan</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>6</b></td>
+</tr>
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="rrr mid"></div><div class="mid"><b>raspur ght</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>8</b></td>
+</tr>
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="rrr mid"></div><div class="mid"><b>thtkjh hg</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>187km</b></td>
+<td><b>7</b></td>
+</tr>
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="rrr mid"></div><div class="mid"><b>gfg jh</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="rrr mid"></div><div class="mid"><b>grg jn Decan</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="rrr mid"></div><div class="mid"><b>fgfg jn</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+<tr style="background-color:#f7e4e4;">
+<td><div class="rrr mid"></div><div class="mid"><b>Hdfdf Decan</b></div></td>
+<td><b>01:30</b></td>
+<td><b>01:35</b></td>
+<td><b>00:00</b></td>
+<td><b>100km</b></td>
+<td><b>1</b></td>
+</tr>
+
+</table>
+</div>
+
+<center><div class="text">
+<h2>Live Train Status (Live Train Running Status)</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscin.</p>
+
+<h2>How To know the current IRCTC train LIVE status </h2>
+
+<p>Enter train number or name
+
+Select the date of train departure
+
+The list will show you the current train location.
+
+It will also show the ETA or Estimated Time of Arrival and ETD or Estimated Time of Departure.
+
+It will also tell whether the train is on time or is delayed.
+
+You can also track the exact time and distance that it is away from the current station.
+
+The list will also guide you on which platform number the train will arrive.
+
+Another important feature is that one can trace the exact position of the train by locating it on the map. By clicking on the indicated points on the map, one can see the name of the station, the arrival and departure time, the travel day number on which the train is running and distance from the source station.
+</p>
+
+<h2>A hassle-free information source for railway enquiry:</h2>
+<p>Gone are the days of standing in long railway enquiry queues at the railway stations or be bugged by hearing the constant engaged tone when dialing up the Indian Railway Enquiry Office. Now the crucial rail information can be easily availed from the comfort of your desktop, mobile phones and tablets. You can either check the website railbeeps.com or download the Rail Beeps application on you mobile phones or tablet.
+
+The website and app will help you easily track the Indian Railway live train running status and all related train running information.
+</p>
+<h2>About Indian Railways</h2>
+<p>Indian Railways, the fourth largest railway network in the world, has over 70,000 passenger coaches and more than 11,000 locomotives. It is managed by the Ministry of Railways and is headed by a cabinet minister who presents the rail budget every year in the parliament. It runs long-distance and suburban rail systems and as of September 2016, India has around 324 km of operational urban rail transit lines.
+
+The Indian Railways was founded on May 8, 1845 and within 172 years, has spread its wing to become one of the busiest yet low-cost travel modes for the passengers. It is the eighth biggest employer in the world with more than 1.4 million employees. The Chhatrapati Shivaji Maharaj Terminus and the Mountain Railways of India are among the UNESCO World Heritage sites.
+
+There are 9 types of passenger trains, namely Gatiman Express, Rajdhani Express, Shatabdi/Janshatabdi Express, Duranto Express, Yuva /Garibrath Express, AC Express, Superfast (includes all the special category trains like Mahamana Express), Mail/Express, Passengers/MEMU/DEMU. In 2015-16, an average of 13,313 passenger trains ran daily, carrying an estimated 22 million passengers a day and covering over 7,000 stations. With such a large number of passengers travelling daily, the Online Train Running Status or Live Train Status becomes a vital tool to comfortably track the real-time status of the train.
+
+By using NDTV Rail Beeps, we hope to make your journey stress-free. Wish you a safe and comfortable journey with the Indian Railways.
+</p>
+
+
+</div>
+<center>
+
+
+
+
+
+
+
+
+
+
+<div class="last">
+<div class="cst">
+<div class="feature e1">
+<h4>Features</h4>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+</div>
+
+<div class="bwu e2">
+<h4>Book with us</h4>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Train Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+
+</div>
+
+<div class="info e3">
+<h4> Info </h4>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<a href="contact.html" style="color:white;text-decoration:none;" ><span>Contact Us</span><br></a>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<span>FAQs</span><br>
+</div>
+
+<div class="about e4" style="width:600px;">
+<h4>TtRAIN</h4>
+<span>TtRAIN is a one stop solution that furnishes an expanse of data-based travel 
+discovery at your disposal. So get connected for an inclusive experience of Smart 
+Train Ticket booking & journey information.</span><br><br>
+<h4>payment and security</h4>
+<span class="cards c1"></span>
+<span class="cards c2"></span>
+<span class="cards c3"></span>
+<span class="cards c4"></span>
+<span class="cards c5"></span>
+<span class="cards c6"></span>
+<br><br>
+<h4>follow us on</h4>
+<a href="https://www.facebook.com/" class="ff1 fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/?lang=en" class="ff2 fa fa-twitter" target="_blank"></a>
+<a href="https://www.youtube.com/" class="ff3 fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/" class="ff4 fa fa-instagram" target="_blank"></a>
+<a href="https://www.snapchat.com/" class="ff5 fa fa-snapchat-ghost" target="_blank"></a>
+<br><br><br>
+<footer>
+<span style="font-size:13px;">
+Copyright © 2021 TtRAIN </span>
+
+</footer>
+
+
+</body>
+
+<script>
+function show(){
+
+var data = document.getElementById("tra").value;
+
+if (data!=null&&data!='')
+{
+document.getElementById("hide").style.display="block";
+}
+}
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+
+
+
+function smyucook(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username").value;
+}
+
+function smyucook1(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username1").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username1").value;
+
+}
+
+
+function checkCookie() {
+  var user = localStorage.getItem("myusername");
+
+  if (user != "") {
+    
+document.getElementById("myuser").style.display = "block";
+document.getElementById("myuser").innerHTML=user;
+  } 
+}
+
+
+
+
+</script>
+</html>

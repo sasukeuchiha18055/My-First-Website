@@ -1,0 +1,940 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<style>
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  overflow: hidden;
+background-image: linear-gradient(90deg,orange,crimson,darkmagenta);
+ padding: 5px 10px;}
+
+.aa {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+z-index:1;
+margin:5px;
+}
+.ab {
+  float: right;
+margin:5px;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+z-index:1;
+background-color: dodgerblue;
+  color: white;
+height:45px;
+
+}
+
+.logo {
+  height:50px;
+width:50px;
+border-radius:50px;
+margin-right:20px;
+float:left;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a {color:white;}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.header span:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+.a1{
+
+width:40%;
+height:700px;
+border: 2px solid grey;
+background-image:linear-gradient(90deg, #7f279c 0%, #2e279d 100%);
+padding:35px 0;
+float:left;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input{border:none;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+background: transparent;
+margin-left:3px;
+width:80%;
+height:10%;
+font-size:15px;
+}
+
+.fl{border:none;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+background: transparent;
+margin-left:3px;
+width:80%;
+height:10%;
+font-size:15px;
+}
+
+.a2{
+width:40%;
+border:2px solid grey;
+height:700px;
+float:left;
+padding:35px 20;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-bottom:100px;
+}
+.line{border:2px solid #d62196;}
+
+.cus{position:relative;}
+
+.line{position:absolute;
+width:60px;
+top:100%;}
+
+.material-icons{
+border:2px solid grey;
+border-radius:100px;
+font-size:30px;
+float:left;}
+
+.icn{padding:10px 5px;}
+.oa{margin-left:20%;
+margin-top:10%;}
+
+.fo{font-family: 'Lobster', cursive;
+font-size:30px;
+color:darkorange;}
+
+.in{font-family: 'Lobster', cursive;
+font-size:30px;
+color:crimson;}
+
+input{color:lightgreen;}
+
+textarea{color:lightgreen;}
+
+#b1{width:90px;
+height:35px;
+background-image:linear-gradient(45deg,black 0%, white 100%);
+border:none;
+border-radius:4px;
+color:white;}
+
+#b2 {color:lawngreen;
+font-size:25px;}
+
+
+
+
+
+
+.open-button {
+z-index:1;
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+
+.form-popup {
+z-index:1;
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+.open-button1 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23opx;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup1 {
+  display: none;
+  position: absolute;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container1 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container1 input[type=text], .form-container1 input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container1 input[type=text]:focus, .form-container1 input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container1 .btn1 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container1 .cancel1 {
+  background-color: red;
+}
+
+
+.form-container1 .btn1:hover, .open-button1:hover {
+  opacity: 1;
+}
+
+.button{border:none;
+background-color:transparent;
+color:white;
+font-size:17px;}
+
+
+
+
+
+
+
+.last{width:100%;
+height:475px;
+margin-top:700px;
+background-image: linear-gradient(90deg,#363636,black);
+z-index:1;
+color:white;}
+
+.xc1{
+margin:auto;
+}
+
+.last{width:100%;}
+
+.e1,.e2,.e3,.e4{
+
+float:left;
+font-size:13px;
+margin:10px;
+padding:10px;
+transition:margin-left 2s;
+}
+
+.e1 span,.e2 span,.e3 span,.e4 span{
+transition:margin-left 1s;}
+
+.c1{
+display:inline-block;
+position:relative;;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Old_Visa_Logo.svg/1024px-Old_Visa_Logo.svg.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c2{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c3{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://i0.wp.com/www.ecommerce-nation.com/wp-content/uploads/2018/01/paypal.png?fit=1000%2C600&ssl=1");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c4{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png");
+width:70px;
+height:40px;
+background-color:white;}
+
+.c5{
+display:inline-block;
+position:relative;
+background-position: -1px -10px;
+background-size: cover;
+background-image:url("https://www.searchpng.com/wp-content/uploads/2020/06/Paytm_Circle_Logo_PNG-715x715.jpg");
+width:60px;
+height:40px;
+background-color:white;}
+
+.c6{
+display:inline-block;
+position:relative;
+background-position: 0px 0px;
+background-size: cover;
+background-image:url("https://download.logo.wine/logo/PhonePe/PhonePe-Logo.wine.png");
+width:60px;
+height:40px;
+background-color:white;}
+
+
+.e1,.e2,.e3{width:15%;}
+
+h4{font-size:15px;
+text-transform: uppercase;}
+
+.about{width:300px;}
+
+.fa{text-decoration:none;
+color:white;
+width:40px;
+height:40px;
+padding:5px;
+text-align:center;
+font-size:25px;
+border:2px solid white;
+border-radius:50%;}
+
+.ff1{transition:background-color 2s;}
+
+.ff1:hover{
+animation: rot 2s;
+background-color:#3B5998;
+}
+
+
+.ff2{transition:background-color 2s;}
+
+.ff2:hover{
+animation: rot 2s;
+background-color:#55ACEE;
+}
+.ff3{transition:background-color 2s;}
+
+.ff3:hover{
+animation: rot 2s;
+background-color:#bb0000;
+}
+.ff4{transition:background-color 2s;}
+
+.ff4:hover{
+animation: rot 2s;
+background-color:#125688;
+}
+.ff5{transition:background-color 2s;}
+
+.ff5:hover{
+animation: rot 2s;
+background-color:#fffc00;
+}
+
+@keyframes rot {
+  50% {transform: rotate(360deg);}
+}
+
+
+.e1 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+
+.e2 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;
+}
+.e3 span:hover{
+text-decoration: underline;
+margin-left:7px;
+cursor: pointer;}
+
+.cst{margin-left:80px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ani{
+position:absolute;
+width:60px;
+height:60px;
+background-color:lightblue;
+border:7px solid cyan;
+
+z-index:-1;
+}
+
+.ani:nth-child(1){
+top:12%;
+left:42%;
+animation:grow 10s linear infinite;
+}
+.ani:nth-child(2){
+top:12%;
+left:2%;
+animation:grow 5s linear infinite;
+}
+
+.ani:nth-child(3){
+top:32%;
+left:11%;
+animation:grow 7s linear infinite;
+}
+
+.ani:nth-child(4){
+top:42%;
+left:9%;
+animation:grow 10s linear infinite;
+}
+
+.ani:nth-child(5){
+top:92%;
+left:5%;
+animation:grow 4s linear infinite;
+}
+
+.ani:nth-child(6){
+top:102%;
+left:22%;
+animation:grow 15s linear infinite;
+}
+
+.ani:nth-child(7){
+top:122%;
+left:6%;
+animation:grow 8s linear infinite;
+}
+
+.ani:nth-child(8){
+top:132%;
+left:14%;
+animation:grow 16s linear infinite;
+}
+
+.ani:nth-child(9){
+top:142%;
+left:42%;
+animation:grow 11s linear infinite;
+}
+
+.ani:nth-child(10){
+top:120%;
+left:19%;
+animation:grow 3s linear infinite;
+}
+
+
+
+
+.ani:nth-child(11){
+top:12%;
+left:89%;
+animation:grow 10s linear infinite;
+}
+.ani:nth-child(12){
+top:12%;
+left:75%;
+animation:grow 5s linear infinite;
+}
+
+.ani:nth-child(13){
+top:32%;
+left:91%;
+animation:grow 7s linear infinite;
+}
+
+.ani:nth-child(14){
+top:42%;
+left:86%;
+animation:grow 10s linear infinite;
+}
+
+.ani:nth-child(15){
+top:92%;
+left:87%;
+animation:grow 4s linear infinite;
+}
+
+.ani:nth-child(16){
+top:102%;
+left:22%;
+animation:grow 15s linear infinite;
+}
+
+.ani:nth-child(17){
+top:122%;
+left:85%;
+animation:grow 8s linear infinite;
+}
+
+.ani:nth-child(18){
+top:132%;
+left:80%;
+animation:grow 16s linear infinite;
+}
+
+.ani:nth-child(19){
+top:142%;
+left:70%;
+animation:grow 11s linear infinite;
+}
+
+.ani:nth-child(20){
+top:120%;
+left:90%;
+animation:grow 3s linear infinite;
+}
+
+@keyframes grow{
+
+0%{
+transform:scale(0) translateY(0) rotate(0);
+opcity: 1;
+}
+100%{
+transform:scale(1.3) translateY(-500px) rotate(360deg);
+opcity: 0;
+}
+
+}
+
+
+p,h1,h2,h3,h4,h5,span{z-index:1;}
+
+</style>
+<body onload="checkCookie()">
+
+
+
+
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+<div class="ani" ></div>
+
+
+
+
+
+<div class="header">
+<span class="aa fo" style="color:lightgreen;">T <span class="in" style="color:snow;"> t </span>RAIN</span>
+  <img src="n.jpg" class="logo">
+  <div class="header-left">
+    <a class="aa" href="main page.html">Home</a>
+    <a class="aa" href="check.html">Book Tickets</a>
+    <a class="aa" href="locate.html">Locate</a>
+    <a class="aa active" href="contact.html">Contact</a>
+    <a class="aa"  href="about.html">About</a>
+    <span class="ab"><button class="button" onclick="openForm()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> Login</button></span>
+    <span class="ab"><button  class="button "onclick="openForm1()"><img style="width:20px;height:20px;vertical-align:-2px" src="https://camu.in/assets/img/avatar1.svg"> SignUp</button></span>
+<span  class="ab" style="background-color:lightgreen;width:100px;position:relative;"><span style="font-size:10px;vertical-align:20px;line-height:0.00001;">Welcome back</span><span  id="myuser"  style="position:absolute;top:40%;left:20%;"> SignUp</span></span>
+
+  </div>
+</div>
+
+
+
+
+<div class="form-popup" id="myForm" onsubmit="return false;">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="smyucook()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+<div class="form-popup1" id="myForm1">
+  <form class="form-container1" onsubmit="return false;">
+    <h1>Sign Up</h1>
+
+    <label for="username1"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" id="username1" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Comfirm Password" name="psw" required>
+
+    <button type="submit" class="btn1" onclick="smyucook1()">Signup</button>
+    <button type="button" class="btn1 cancel1" onclick="closeForm1()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+<div class="oa">
+
+<div class="a1">
+<center><span style="color:white;font-size:40px;">Send us a Message<span><center>
+<br>
+<form onsubmit="ch();return false;">
+<input type="text" placeholder="Name" required><br><br>
+<input type="email" placeholder="Email" required><br><br>
+<input type="text" placeholder="Subject" required ><br><br>
+<textarea name="message" class="fl" id="message"  placeholder="Message" required></textarea>
+<br><br>
+<p id="b2" ></p>
+<button id="b1" type="submit" onclick="send();typeWriter();">Send</button>
+
+</form>
+</div>
+
+<div class="a2">
+<div class="cus"><h3 style="color:purple;font-size:40px;">Contact Us</h3>
+<div class="line"></div></div>
+<span style="color:grey;">We're open for any suggestion or just to have a chat about websites sprcifications</span>
+<br><br>
+<div class="icn">
+<span class="material-icons">
+location_on
+</span>
+<span class="acd" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adress:<span style="color:grey;">134 xyz 99 street,xyzpin 10399</span></span>
+</div>
+
+<div class="icn">
+<span class="material-icons">
+phone
+</span>
+<span class="acd" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone:<span style="color:grey;">+ 12 3456789001</span></span>
+</div>
+
+<div class="icn">
+<span class="material-icons">
+email
+</span>
+<span class="acd" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:<span style="color:grey;">wwwwww@gmail.com</span></span>
+</div>
+
+<div class="icn">
+<span class="material-icons">
+public
+</span>
+<span class="acd" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Website:<span style="color:grey;">xyz.com</span></span>
+</div>
+
+</div>
+
+</div>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+<div class="last">
+<div class="cst">
+<div class="feature e1">
+<h4>Features</h4>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+</div>
+
+<div class="bwu e2">
+<h4>Book with us</h4>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Train Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Live Train Status</span><br></a>
+<a href="check.html" style="color:white;text-decoration:none;" ><span>Book Tickets</span><br></a>
+<a href="locate.html" style="color:white;text-decoration:none;" ><span>Trains</span><br></a>
+
+</div>
+
+<div class="info e3">
+<h4> Info </h4>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<a href="contact.html" style="color:white;text-decoration:none;" ><span>Contact Us</span><br></a>
+<a href="about.html" style="color:white;text-decoration:none;" ><span>About Us</span><br></a>
+<span>FAQs</span><br>
+</div>
+
+<div class="about e4" style="width:600px;">
+<h4>TtRAIN</h4>
+<span>TtRAIN is a one stop solution that furnishes an expanse of data-based travel 
+discovery at your disposal. So get connected for an inclusive experience of Smart 
+Train Ticket booking & journey information.</span><br><br>
+<h4>payment and security</h4>
+<span class="cards c1"></span>
+<span class="cards c2"></span>
+<span class="cards c3"></span>
+<span class="cards c4"></span>
+<span class="cards c5"></span>
+<span class="cards c6"></span>
+<br><br>
+<h4>follow us on</h4>
+<a href="https://www.facebook.com/" class="ff1 fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/?lang=en" class="ff2 fa fa-twitter" target="_blank"></a>
+<a href="https://www.youtube.com/" class="ff3 fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/" class="ff4 fa fa-instagram" target="_blank"></a>
+<a href="https://www.snapchat.com/" class="ff5 fa fa-snapchat-ghost" target="_blank"></a>
+<br><br><br>
+<footer>
+<span style="font-size:13px;">
+Copyright © 2021 TtRAIN </span>
+
+</footer>
+
+
+
+
+</body>
+<script>
+function send(){
+if(x==1){
+
+document.getElementById("b1").style.display="none";
+}}
+
+
+
+var i = 0;
+var txt = 'SENT YOUR MESSAGE ';
+var speed = 80;
+
+function typeWriter() {
+if(x==1){
+
+  if (i < txt.length) {
+    document.getElementById("b2").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}}
+
+var x=0;
+function ch(){
+x=1;
+}
+
+
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+
+
+function smyucook(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username").value;
+}
+
+function smyucook1(){
+document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm1").style.display = "none";
+document.getElementById("myuser").style.display = "block";
+
+var storedNames =document.getElementById("username1").value;
+ localStorage.setItem("myusername",storedNames);
+document.getElementById("myuser").innerHTML=document.getElementById("username1").value;
+
+}
+
+
+function checkCookie() {
+  var user = localStorage.getItem("myusername");
+
+  if (user != "") {
+    
+document.getElementById("myuser").style.display = "block";
+document.getElementById("myuser").innerHTML=user;
+  } 
+}
+
+
+
+
+
+</script>
+</html>
